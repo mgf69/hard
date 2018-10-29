@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/fouroperations.css">
+  <title>欢迎来到四则运算</title>
+</head>
+
+<body>
+  <h2>四则运算题</h2>
+  <div class="wrap1">
+    <div class="choiceBox">
+      <div>
+        <label for="questionNum1">题目个数：(不超过5道)</label>
+        <input type="text" id="questionNum1">
+      </div>
+      <div>
+        <label for="maxNum1">运算不超过的数字:(小于100的整数)</label>
+        <input type="text" id="maxNum1">
+      </div>
+    </div>
+    <div class="btnBox">
+      <button type="button" onclick="playAll()">开始生成题目</button>
+      <button type="button" id="completedBtn">完成答题题目</button>
+      <button type="button" onclick="color()">换皮肤</button>
+    </div>
+    <div style="text-align: center">
+    	<input type="text" id="timetext" value="00分00秒000毫秒" readonly><br>
+    </div>
+    <div class="textBox">
+			<button type="button" onclick="start()">计时开始</button>
+			<button type="button" onclick="stop()">计时结束</button>
+			<button type="button" onclick="Reset()">重置计时器</button>
+		</div>
+    <div class="qusBox">
+      <span id="myQus"></span>
+    </div>
+    <div id="comment">
+    </div>
+  </div>
+  <script type="text/javascript" src="./js/fouroperations.js">
+</script>
+</body>
+
+</html>
